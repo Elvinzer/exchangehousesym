@@ -1,0 +1,63 @@
+{% extends "base.html.twig" %}
+{% block title %}Création de compte{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/accountCreation.css') }}" rel="stylesheet"/>
+{% endblock %}
+{% block body %}
+
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                <h3>Bienvenue</h3>
+                <p>Vous êtes à 30s de rejoindre la communauté (pas celle de l'anneau ..)</p>
+            </div>
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 id="becomeKO" class="register-heading">Création de compte</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id = "firstNameKeeperValue" type="text" class="form-control" placeholder="Prénom *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input id = "lastNameKeeperValue" type="text" class="form-control" placeholder="Nom *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input id = "passwordKeeperValue" type="password" class="form-control" placeholder="Mot de passe *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input id = "passwordKeeperValueBis" type="password" class="form-control"  placeholder="Confirmez le Mot de passe *" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id = "emailKeeperValue" type="email" class="form-control" placeholder="Adresse mail *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input id = "phoneKeeperValue" type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Téléphone.. *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <select id = "secretQuestionKeeperValue" class="form-control secretQuestion">
+                                        <option class="hidden"  selected disabled>Renseignez votre question secrète</option>
+                                        <option>Quelle est votre date de naissance?</option>
+                                        <option>Quel était votre 1er numéro de téléphone?</option>
+                                        <option>Le nom de votre 1er animal de compagnie?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input id = "secretAnswerKeeperValue" type="text" class="form-control" placeholder="Entrez une réponse *" value="" />
+                                </div>
+                                <input type="submit" class="btnRegister"  value="Création du compte"/>
+                            </div>
+                            <span class ="backHome"><a href="{{ path('mainPage') }}">&lt;-- Retour</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

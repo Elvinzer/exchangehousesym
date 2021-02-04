@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+    {# CSS products.vue #}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+{% block body %}
+    {% include 'menu_top.html' %}
+{# <div id="search">
+</div> #}
+<div id="products">
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+
+    <!-- Renders app.js & a webpack runtime.js file
+        <script src="/build/runtime.js"></script>
+        <script src="/build/app.js"></script> -->
+{% endblock %}
