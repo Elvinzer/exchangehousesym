@@ -13,8 +13,8 @@ global.$ = global.jQuery = $;
 const router = new VueRouter({
     routes: [
       // dynamic segments start with a colon
-      { path: '/foo', component: AdManagement },
-      { path: '/bar', component: MonProfil }
+      { path: '/gestion-annonces', component: AdManagement },
+      { path: '/gestion-profil', component: MonProfil }
     ]
   })
 

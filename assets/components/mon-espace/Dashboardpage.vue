@@ -3,12 +3,10 @@
         <div class="wrapper d-flex align-items-stretch">
             <SidebarDashboard></SidebarDashboard>
             <div class="container">
-                <button type="button" class="btn btn-primary">Primary</button>
-                test {{ compteur }}
-                <div class="btn btn-primary"><router-link to="/foo">Aller à Foo</router-link></div>
-                <div class="btn btn-primary"><router-link to="/bar">Aller à Bar</router-link></div>
+                <div  class="btn btn-primary"><router-link style="color: white;" to="/gestion-annonces">Gestion des annonces</router-link></div>
+                <div  class="btn btn-primary"><router-link style="color: white;" to="/gestion-profil">Gestion de mon profil</router-link></div>
                 <router-view></router-view>
-                <!-- <AdManagement></AdManagement> -->
+                <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde autem distinctio vitae nostrum laudantium itaque fugit obcaecati quidem, architecto aspernatur eveniet, fugiat, eligendi minima cumque a at natus soluta impedit perferendis incidunt! Earum, assumenda officiis alias animi eligendi maiores, illum provident sunt nemo deleniti, magni error nisi porro quos asperiores iusto quae doloremque minus labore sint rerum quidem quisquam consectetur? Iure tenetur deleniti quisquam enim reprehenderit voluptate atque harum, earum, architecto sit esse repellat minima fuga? Ut sequi delectus qui, alias quo recusandae libero est, officiis minima nesciunt ipsa facilis! Optio architecto recusandae, saepe non at culpa tempora adipisci blanditiis!</div>
             </div>
         </div>
     </div>
@@ -26,16 +24,14 @@ export default {
     },
     data(){
         return {
-            test: 'cc dashboard',
-            compteur: 0
+            test: 'cc dashboard'
         }
     },
     methods: {
-        setCompteur : function() {
-            this.compteur++
-        }
+    
     }
 }
 </script>
 <style>
+    
 </style>
