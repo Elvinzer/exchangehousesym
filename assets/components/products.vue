@@ -70,7 +70,7 @@ export default {
     methods: {
         getHouses : async function(){
             axios
-          .post('https://localhost/exchangehouse-back/handlerDatabase.php', JSON.stringify({action : 'getAllHouses'}))
+          .post('/handlerDatabase.php', JSON.stringify({action : 'getAllHouses'}))
           .then(response => (
                 this.solidEstatesResult = response.data,
                 this.estatesFinalResult = response.data,
